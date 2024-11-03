@@ -1,0 +1,12 @@
+RUBY = ruby
+SRC_DIR = src
+TEST_DIR = test
+TARGET = main
+
+all: run
+
+run: 
+	$(RUBY) $(SRC_DIR)/$(TARGET).rb
+
+test:
+	$(RUBY) $(TEST_DIR)/$(TARGET).rb
